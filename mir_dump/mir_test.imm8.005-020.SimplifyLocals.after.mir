@@ -1,0 +1,33 @@
+// MIR for `imm8` after SimplifyLocals
+
+fn imm8(_1: u32) -> u32 {
+    debug x => _1;                       // in scope 0 at src/main.rs:2:13: 2:14
+    let mut _0: u32;                     // return place in scope 0 at src/main.rs:3:9: 3:16
+    let mut _2: u32;                     // in scope 0 at src/main.rs:4:12: 4:27
+    let mut _3: u32;                     // in scope 0 at src/main.rs:4:12: 4:20
+    let mut _4: u32;                     // in scope 0 at src/main.rs:4:13: 4:14
+    let mut _5: (u32, bool);             // in scope 0 at src/main.rs:4:12: 4:20
+    scope 1 {
+        debug out => _0;                 // in scope 1 at src/main.rs:3:9: 3:16
+    }
+
+    bb0: {
+        _0 = const 0_u32;                // scope 0 at src/main.rs:3:19: 3:23
+        StorageLive(_2);                 // scope 1 at src/main.rs:4:12: 4:27
+        StorageLive(_3);                 // scope 1 at src/main.rs:4:12: 4:20
+        StorageLive(_4);                 // scope 1 at src/main.rs:4:13: 4:14
+        _4 = _1;                         // scope 1 at src/main.rs:4:13: 4:14
+        _5 = CheckedShr(_4, const 0_i32); // scope 1 at src/main.rs:4:12: 4:20
+        assert(!move (_5.1: bool), "attempt to shift right by `{}`, which would overflow", const 0_i32) -> bb1; // scope 1 at src/main.rs:4:12: 4:20
+    }
+
+    bb1: {
+        _3 = move (_5.0: u32);           // scope 1 at src/main.rs:4:12: 4:20
+        StorageDead(_4);                 // scope 1 at src/main.rs:4:19: 4:20
+        _2 = BitAnd(move _3, const 255_u32); // scope 1 at src/main.rs:4:12: 4:27
+        StorageDead(_3);                 // scope 1 at src/main.rs:4:26: 4:27
+        _0 = BitOr(_0, move _2);         // scope 1 at src/main.rs:4:5: 4:27
+        StorageDead(_2);                 // scope 1 at src/main.rs:4:26: 4:27
+        return;                          // scope 0 at src/main.rs:6:2: 6:2
+    }
+}

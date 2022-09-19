@@ -1,0 +1,42 @@
+// MIR for `imm8` before SimplifyCfg-early-opt
+
+fn imm8(_1: u32) -> u32 {
+    debug x => _1;                       // in scope 0 at src/main.rs:2:13: 2:14
+    let mut _0: u32;                     // return place in scope 0 at src/main.rs:2:24: 2:27
+    let mut _2: u32;                     // in scope 0 at src/main.rs:3:9: 3:16
+    let mut _3: u32;                     // in scope 0 at src/main.rs:4:12: 4:27
+    let mut _4: u32;                     // in scope 0 at src/main.rs:4:12: 4:20
+    let mut _5: u32;                     // in scope 0 at src/main.rs:4:13: 4:14
+    let mut _6: (u32, bool);             // in scope 0 at src/main.rs:4:12: 4:20
+    scope 1 {
+        debug out => _2;                 // in scope 1 at src/main.rs:3:9: 3:16
+    }
+
+    bb0: {
+        StorageLive(_2);                 // scope 0 at src/main.rs:3:9: 3:16
+        _2 = const 0_u32;                // scope 0 at src/main.rs:3:19: 3:23
+        nop;                             // scope 0 at src/main.rs:3:9: 3:16
+        StorageLive(_3);                 // scope 1 at src/main.rs:4:12: 4:27
+        StorageLive(_4);                 // scope 1 at src/main.rs:4:12: 4:20
+        StorageLive(_5);                 // scope 1 at src/main.rs:4:13: 4:14
+        _5 = _1;                         // scope 1 at src/main.rs:4:13: 4:14
+        _6 = CheckedShr(_5, const 0_i32); // scope 1 at src/main.rs:4:12: 4:20
+        assert(!move (_6.1: bool), "attempt to shift right by `{}`, which would overflow", const 0_i32) -> bb1; // scope 1 at src/main.rs:4:12: 4:20
+    }
+
+    bb1: {
+        _4 = move (_6.0: u32);           // scope 1 at src/main.rs:4:12: 4:20
+        StorageDead(_5);                 // scope 1 at src/main.rs:4:19: 4:20
+        _3 = BitAnd(move _4, const 255_u32); // scope 1 at src/main.rs:4:12: 4:27
+        StorageDead(_4);                 // scope 1 at src/main.rs:4:26: 4:27
+        _2 = BitOr(_2, move _3);         // scope 1 at src/main.rs:4:5: 4:27
+        StorageDead(_3);                 // scope 1 at src/main.rs:4:26: 4:27
+        _0 = _2;                         // scope 1 at src/main.rs:5:5: 5:8
+        StorageDead(_2);                 // scope 0 at src/main.rs:6:1: 6:2
+        return;                          // scope 0 at src/main.rs:6:2: 6:2
+    }
+
+    bb2 (cleanup): {
+        resume;                          // scope 0 at src/main.rs:2:1: 6:2
+    }
+}

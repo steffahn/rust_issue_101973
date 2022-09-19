@@ -1,0 +1,13 @@
+// MIR for `call_once` after AddMovesForPackedDrops
+
+fn call_once(_1: fn(), _2: ()) -> <fn() as FnOnce<()>>::Output {
+    let mut _0: <fn() as std::ops::FnOnce<()>>::Output; // return place in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ops/function.rs:248:5: 248:71
+
+    bb0: {
+        _0 = move _1() -> bb1;           // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ops/function.rs:248:5: 248:71
+    }
+
+    bb1: {
+        return;                          // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ops/function.rs:248:5: 248:71
+    }
+}

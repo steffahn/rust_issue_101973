@@ -1,0 +1,194 @@
+// MIR for `main` before SimplifyArmIdentity
+
+fn main() -> () {
+    let mut _0: ();                      // return place in scope 0 at src/main.rs:13:11: 13:11
+    let _1: i64;                         // in scope 0 at src/main.rs:14:9: 14:12
+    let _2: ();                          // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+    let _3: ();                          // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+    let mut _4: std::fmt::Arguments;     // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _5: &[&str];                 // in scope 0 at src/main.rs:15:14: 15:24
+    let mut _6: &[&str; 2];              // in scope 0 at src/main.rs:15:14: 15:24
+    let _7: &[&str; 2];                  // in scope 0 at src/main.rs:15:14: 15:24
+    let _8: [&str; 2];                   // in scope 0 at src/main.rs:15:14: 15:24
+    let mut _9: &[std::fmt::ArgumentV1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _10: &[std::fmt::ArgumentV1; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _11: &[std::fmt::ArgumentV1; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _12: [std::fmt::ArgumentV1; 1];  // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _13: std::fmt::ArgumentV1;   // in scope 0 at src/main.rs:15:16: 15:19
+    let mut _14: &i64;                   // in scope 0 at src/main.rs:15:16: 15:19
+    let _15: &i64;                       // in scope 0 at src/main.rs:15:16: 15:19
+    let mut _16: &[std::fmt::rt::v1::Argument]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _17: &[std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _18: &[std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _19: [std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _20: std::fmt::rt::v1::Argument; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _21: std::fmt::rt::v1::FormatSpec; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _22: std::fmt::rt::v1::Alignment; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _23: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _24: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _25: core::fmt::UnsafeArg;   // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    scope 1 {
+        debug val => _1;                 // in scope 1 at src/main.rs:14:9: 14:12
+        let mut _26: &[std::fmt::rt::v1::Argument; 1]; // in scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        let mut _27: &[&str; 2];         // in scope 1 at src/main.rs:15:14: 15:24
+        scope 2 {
+            scope 6 (inlined core::fmt::UnsafeArg::new) { // at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+            }
+        }
+        scope 3 (inlined ArgumentV1::new_lower_hex::<i64>) { // at src/main.rs:15:16: 15:19
+            debug x => _14;              // in scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:322:30: 322:31
+            let mut _28: &i64;           // in scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:23: 323:24
+            let mut _29: for<'r, 's, 't0> fn(&'r i64, &'s mut std::fmt::Formatter<'t0>) -> std::result::Result<(), std::fmt::Error>; // in scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:26: 323:33
+            scope 4 (inlined ArgumentV1::new::<i64>) { // at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:13: 323:34
+                debug x => _28;          // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:333:23: 333:24
+                debug f => _29;          // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:333:33: 333:34
+                let mut _30: for<'r, 's, 't0> fn(&'r core::fmt::Opaque, &'s mut std::fmt::Formatter<'t0>) -> std::result::Result<(), std::fmt::Error>; // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:42: 342:59
+                let mut _31: for<'r, 's, 't0> fn(&'r i64, &'s mut std::fmt::Formatter<'t0>) -> std::result::Result<(), std::fmt::Error>; // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:57: 342:58
+                let mut _32: &core::fmt::Opaque; // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:68: 342:85
+                let mut _33: &i64;       // in scope 4 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:83: 342:84
+                scope 5 {
+                }
+            }
+        }
+        scope 7 (inlined Arguments::new_v1_formatted) { // at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+            debug pieces => _5;          // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:415:9: 415:15
+            debug args => _9;            // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:416:9: 416:13
+            debug fmt => _16;            // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:417:9: 417:12
+            debug _unsafe_arg => _25;    // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:418:9: 418:20
+            let mut _34: &[&str];        // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:21: 420:27
+            let mut _35: std::option::Option<&[std::fmt::rt::v1::Argument]>; // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:34: 420:43
+            let mut _36: &[std::fmt::rt::v1::Argument]; // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:39: 420:42
+            let mut _37: &[std::fmt::ArgumentV1]; // in scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:45: 420:49
+        }
+    }
+
+    bb0: {
+        StorageLive(_1);                 // scope 0 at src/main.rs:14:9: 14:12
+        _1 = inner(const 3811373583_u32) -> bb1; // scope 0 at src/main.rs:14:15: 14:32
+                                         // mir::Constant
+                                         // + span: src/main.rs:14:15: 14:20
+                                         // + literal: Const { ty: fn(u32) -> i64 {inner}, val: Value(<ZST>) }
+    }
+
+    bb1: {
+        StorageLive(_2);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+        StorageLive(_3);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+        StorageLive(_4);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_5);                 // scope 1 at src/main.rs:15:14: 15:24
+        StorageLive(_6);                 // scope 1 at src/main.rs:15:14: 15:24
+        StorageLive(_7);                 // scope 1 at src/main.rs:15:14: 15:24
+        _27 = const main::promoted[1];   // scope 1 at src/main.rs:15:14: 15:24
+                                         // mir::Constant
+                                         // + span: src/main.rs:15:14: 15:24
+                                         // + literal: Const { ty: &[&str; 2], val: Unevaluated(main, [], Some(promoted[1])) }
+        _7 = _27;                        // scope 1 at src/main.rs:15:14: 15:24
+        _6 = _7;                         // scope 1 at src/main.rs:15:14: 15:24
+        _5 = move _6 as &[&str] (Pointer(Unsize)); // scope 1 at src/main.rs:15:14: 15:24
+        StorageDead(_6);                 // scope 1 at src/main.rs:15:23: 15:24
+        StorageLive(_9);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_10);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_11);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_12);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_13);                // scope 1 at src/main.rs:15:16: 15:19
+        StorageLive(_14);                // scope 1 at src/main.rs:15:16: 15:19
+        StorageLive(_15);                // scope 1 at src/main.rs:15:16: 15:19
+        _15 = &_1;                       // scope 1 at src/main.rs:15:16: 15:19
+        _14 = _15;                       // scope 1 at src/main.rs:15:16: 15:19
+        StorageLive(_28);                // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:23: 323:24
+        _28 = _14;                       // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:23: 323:24
+        StorageLive(_29);                // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:26: 323:33
+        _29 = <i64 as LowerHex>::fmt as for<'r, 's, 't0> fn(&'r i64, &'s mut std::fmt::Formatter<'t0>) -> std::result::Result<(), std::fmt::Error> (Pointer(ReifyFnPointer)); // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:26: 323:33
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:26: 323:33
+                                         // + literal: Const { ty: for<'r, 's, 't0> fn(&'r i64, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error> {<i64 as LowerHex>::fmt}, val: Value(<ZST>) }
+        StorageLive(_30);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:42: 342:59
+        StorageLive(_31);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:57: 342:58
+        _31 = _29;                       // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:57: 342:58
+        _30 = transmute::<for<'r, 's, 't0> fn(&'r i64, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error>, for<'r, 's, 't0> fn(&'r core::fmt::Opaque, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error>>(move _31) -> bb3; // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:42: 342:59
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:42: 342:56
+                                         // + literal: Const { ty: unsafe extern "rust-intrinsic" fn(for<'r, 's, 't0> fn(&'r i64, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error>) -> for<'r, 's, 't0> fn(&'r core::fmt::Opaque, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error> {transmute::<for<'r, 's, 't0> fn(&'r i64, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error>, for<'r, 's, 't0> fn(&'r core::fmt::Opaque, &'s mut Formatter<'t0>) -> Result<(), std::fmt::Error>>}, val: Value(<ZST>) }
+    }
+
+    bb2: {
+        StorageDead(_4);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:61: 136:62
+        StorageDead(_18);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_15);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_12);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_11);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_7);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_3);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        nop;                             // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+        StorageDead(_2);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:137:5: 137:6
+        nop;                             // scope 0 at src/main.rs:13:11: 16:2
+        StorageDead(_1);                 // scope 0 at src/main.rs:16:1: 16:2
+        return;                          // scope 0 at src/main.rs:16:2: 16:2
+    }
+
+    bb3: {
+        StorageDead(_31);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:58: 342:59
+        StorageLive(_32);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:68: 342:85
+        StorageLive(_33);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:83: 342:84
+        _33 = _28;                       // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:83: 342:84
+        _32 = transmute::<&i64, &core::fmt::Opaque>(move _33) -> bb4; // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:68: 342:85
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:68: 342:82
+                                         // + literal: Const { ty: unsafe extern "rust-intrinsic" fn(&i64) -> &core::fmt::Opaque {transmute::<&i64, &core::fmt::Opaque>}, val: Value(<ZST>) }
+    }
+
+    bb4: {
+        StorageDead(_33);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:84: 342:85
+        Deinit(_13);                     // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:18: 342:87
+        (_13.0: &core::fmt::Opaque) = move _32; // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:18: 342:87
+        (_13.1: for<'r, 's, 't0> fn(&'r core::fmt::Opaque, &'s mut std::fmt::Formatter<'t0>) -> std::result::Result<(), std::fmt::Error>) = move _30; // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:18: 342:87
+        StorageDead(_32);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:86: 342:87
+        StorageDead(_30);                // scope 5 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:342:86: 342:87
+        StorageDead(_29);                // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:33: 323:34
+        StorageDead(_28);                // scope 3 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:323:33: 323:34
+        StorageDead(_14);                // scope 1 at src/main.rs:15:18: 15:19
+        _12 = [move _13];                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_13);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        _11 = &_12;                      // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _10 = _11;                       // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _9 = move _10 as &[std::fmt::ArgumentV1] (Pointer(Unsize)); // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_10);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageLive(_16);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_17);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_18);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _26 = const main::promoted[0];   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // + literal: Const { ty: &[Argument; 1], val: Unevaluated(main, [], Some(promoted[0])) }
+        _18 = _26;                       // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _17 = _18;                       // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _16 = move _17 as &[std::fmt::rt::v1::Argument] (Pointer(Unsize)); // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_17);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageLive(_25);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_34);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:21: 420:27
+        _34 = _5;                        // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:21: 420:27
+        StorageLive(_35);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:34: 420:43
+        StorageLive(_36);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:39: 420:42
+        _36 = _16;                       // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:39: 420:42
+        Deinit(_35);                     // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:34: 420:43
+        ((_35 as Some).0: &[std::fmt::rt::v1::Argument]) = move _36; // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:34: 420:43
+        discriminant(_35) = 1;           // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:34: 420:43
+        StorageDead(_36);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:42: 420:43
+        StorageLive(_37);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:45: 420:49
+        _37 = _9;                        // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:45: 420:49
+        Deinit(_4);                      // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:9: 420:51
+        (_4.0: &[&str]) = move _34;      // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:9: 420:51
+        (_4.1: std::option::Option<&[std::fmt::rt::v1::Argument]>) = move _35; // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:9: 420:51
+        (_4.2: &[std::fmt::ArgumentV1]) = move _37; // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:9: 420:51
+        StorageDead(_37);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:50: 420:51
+        StorageDead(_35);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:50: 420:51
+        StorageDead(_34);                // scope 7 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/fmt/mod.rs:420:50: 420:51
+        StorageDead(_25);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_16);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_9);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_5);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        _3 = _print(move _4) -> bb2;     // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:27
+                                         // + literal: Const { ty: for<'r> fn(Arguments<'r>) {_print}, val: Value(<ZST>) }
+    }
+}

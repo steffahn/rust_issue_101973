@@ -1,0 +1,18 @@
+// MIR for `main::promoted[1]` before StateTransform
+
+promoted[1] in main: &[&str; 2] = {
+    let mut _0: &[&str; 2];              // return place in scope 0 at src/main.rs:15:14: 15:24
+    let mut _1: [&str; 2];               // in scope 0 at src/main.rs:15:14: 15:24
+
+    bb0: {
+        _1 = [const "", const "\n"];     // scope 0 at src/main.rs:15:14: 15:24
+                                         // mir::Constant
+                                         // + span: src/main.rs:15:14: 15:24
+                                         // + literal: Const { ty: &str, val: Value(Slice(..)) }
+                                         // mir::Constant
+                                         // + span: src/main.rs:15:14: 15:24
+                                         // + literal: Const { ty: &str, val: Value(Slice(..)) }
+        _0 = &_1;                        // scope 0 at src/main.rs:15:14: 15:24
+        return;                          // scope 0 at src/main.rs:15:14: 15:24
+    }
+}

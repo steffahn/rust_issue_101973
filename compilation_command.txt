@@ -1,0 +1,1 @@
+cargo +nightly rustc --release -- -C debug-assertions=on -Zdump-mir=all

@@ -1,0 +1,13 @@
+// MIR for `std::ptr::drop_in_place` before Derefer
+
+fn std::ptr::drop_in_place(_1: *mut T) -> () {
+    let mut _0: ();                      // return place in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ptr/mod.rs:487:1: 487:56
+
+    bb0: {
+        goto -> bb1;                     // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ptr/mod.rs:487:1: 487:56
+    }
+
+    bb1: {
+        return;                          // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/core/src/ptr/mod.rs:487:1: 487:56
+    }
+}

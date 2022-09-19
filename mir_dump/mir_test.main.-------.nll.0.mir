@@ -1,0 +1,335 @@
+// MIR for `main` 0 nll
+
+| Free Region Mapping
+| '_#0r | Global | ['_#0r, '_#1r]
+| '_#1r | Local | ['_#1r]
+|
+| Inferred Region Values
+| '_#0r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#1r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#1r}
+| '_#2r | U0 | {bb2[10..=16], bb3[0], bb4[0..=4]}
+| '_#3r | U0 | {}
+| '_#4r | U0 | {bb2[10..=16], bb3[0], bb4[0..=4]}
+| '_#5r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#6r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#7r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#8r | U0 | {bb1[7..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#9r | U0 | {}
+| '_#10r | U0 | {}
+| '_#11r | U0 | {bb1[7..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#12r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#13r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#14r | U0 | {bb1[7..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#15r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#16r | U0 | {bb1[8..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#17r | U0 | {bb1[9..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#18r | U0 | {bb1[10..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#19r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#20r | U0 | {bb1[19..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#21r | U0 | {bb1[20..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#22r | U0 | {bb1[21]}
+| '_#23r | U0 | {bb2[1..=16], bb3[0], bb4[0..=4]}
+| '_#24r | U0 | {bb2[3..=16], bb3[0], bb4[0..=4]}
+| '_#25r | U0 | {bb2[4..=16], bb3[0], bb4[0..=4]}
+| '_#26r | U0 | {bb2[5..=16], bb3[0], bb4[0..=4]}
+| '_#27r | U0 | {bb2[5..=16], bb3[0], bb4[0..=4]}
+| '_#28r | U0 | {bb2[10..=16], bb3[0], bb4[0..=4]}
+| '_#29r | U0 | {bb2[11..=16], bb3[0], bb4[0..=4]}
+| '_#30r | U0 | {bb2[12..=16], bb3[0], bb4[0..=4]}
+| '_#31r | U0 | {bb2[13..=16], bb3[0], bb4[0..=4]}
+| '_#32r | U0 | {bb3[0], bb4[0..=4]}
+| '_#33r | U0 | {bb4[0..=4]}
+| '_#34r | U0 | {bb1[11..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#35r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#36r | U0 | {bb1[10..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#37r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#38r | U0 | {bb1[9..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#39r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#40r | U0 | {}
+| '_#41r | U0 | {bb2[6..=16], bb3[0], bb4[0..=4]}
+| '_#42r | U0 | {bb2[6..=16], bb3[0], bb4[0..=4]}
+| '_#43r | U0 | {bb2[5..=16], bb3[0], bb4[0..=4]}
+| '_#44r | U0 | {bb2[5..=16], bb3[0], bb4[0..=4]}
+| '_#45r | U0 | {bb2[4..=16], bb3[0], bb4[0..=4]}
+| '_#46r | U0 | {bb2[4..=16], bb3[0], bb4[0..=4]}
+| '_#47r | U0 | {bb2[2..=16], bb3[0], bb4[0..=4]}
+| '_#48r | U0 | {bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#49r | U0 | {bb1[21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#50r | U0 | {bb1[20..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#51r | U0 | {bb2[14..=16], bb3[0], bb4[0..=4]}
+| '_#52r | U0 | {bb2[13..=16], bb3[0], bb4[0..=4]}
+| '_#53r | U0 | {bb2[12..=16], bb3[0], bb4[0..=4]}
+| '_#54r | U0 | {bb2[11..=16], bb3[0], bb4[0..=4]}
+| '_#55r | U0 | {bb1[8..=21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#56r | U0 | {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0], '_#0r, '_#1r}
+| '_#57r | U0 | {bb3[0], bb4[0..=4]}
+| '_#58r | U0 | {bb1[21]}
+| '_#59r | U0 | {bb3[0], bb4[0..=4]}
+| '_#60r | U0 | {bb3[0], bb4[0..=4]}
+| '_#61r | U0 | {bb1[21]}
+| '_#62r | U0 | {bb1[21]}
+| '_#63r | U0 | {bb1[21], bb2[0..=16], bb3[0], bb4[0..=4]}
+| '_#64r | U0 | {bb4[4]}
+|
+| Inference Constraints
+| '_#0r live at {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0]}
+| '_#1r live at {bb0[0..=1], bb1[0..=21], bb2[0..=16], bb3[0], bb4[0..=4], bb5[0..=11], bb6[0]}
+| '_#6r live at {bb1[7]}
+| '_#7r live at {bb1[7]}
+| '_#14r live at {bb1[7]}
+| '_#15r live at {bb1[7]}
+| '_#16r live at {bb1[8]}
+| '_#17r live at {bb1[9]}
+| '_#18r live at {bb1[10]}
+| '_#19r live at {bb1[10]}
+| '_#20r live at {bb1[19]}
+| '_#21r live at {bb1[20]}
+| '_#22r live at {bb1[21]}
+| '_#23r live at {bb2[1]}
+| '_#24r live at {bb2[3]}
+| '_#25r live at {bb2[4]}
+| '_#26r live at {bb2[5]}
+| '_#27r live at {bb2[5]}
+| '_#28r live at {bb2[10]}
+| '_#29r live at {bb2[11]}
+| '_#30r live at {bb2[12]}
+| '_#31r live at {bb2[13]}
+| '_#32r live at {bb3[0]}
+| '_#33r live at {bb4[0..=4]}
+| '_#34r live at {bb1[11..=21], bb2[0..=16], bb3[0]}
+| '_#35r live at {bb1[11..=21], bb2[0..=16], bb3[0]}
+| '_#36r live at {bb1[10]}
+| '_#37r live at {bb1[10]}
+| '_#38r live at {bb1[9]}
+| '_#39r live at {bb1[9]}
+| '_#41r live at {bb2[6..=16], bb3[0]}
+| '_#42r live at {bb2[6..=16], bb3[0]}
+| '_#43r live at {bb2[5]}
+| '_#44r live at {bb2[5]}
+| '_#45r live at {bb2[4]}
+| '_#46r live at {bb2[4]}
+| '_#47r live at {bb2[2..=3]}
+| '_#48r live at {bb2[0..=1]}
+| '_#49r live at {bb1[21]}
+| '_#50r live at {bb1[20]}
+| '_#51r live at {bb2[14..=16], bb3[0]}
+| '_#52r live at {bb2[13]}
+| '_#53r live at {bb2[12]}
+| '_#54r live at {bb2[11]}
+| '_#55r live at {bb1[8]}
+| '_#56r live at {bb1[8]}
+| '_#63r live at {bb1[21]}
+| '_#64r live at {bb4[4]}
+| '_#0r: '_#32r due to BoringNoLocation at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#2r: '_#4r due to Boring at Single(bb2[10]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#4r: '_#28r due to Boring at Single(bb2[10]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#5r: '_#13r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#6r: '_#5r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#7r: '_#5r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#8r: '_#11r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#11r: '_#14r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#12r: '_#15r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#13r: '_#12r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#14r: '_#11r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#14r: '_#55r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#15r: '_#12r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#15r: '_#56r due to Boring at Single(bb1[7]) (src/main.rs:15:14: 15:24 (#0)
+| '_#16r: '_#38r due to Boring at Single(bb1[8]) (src/main.rs:15:14: 15:24 (#0)
+| '_#17r: '_#36r due to Boring at Single(bb1[9]) (src/main.rs:15:14: 15:24 (#0)
+| '_#18r: '_#34r due to Boring at Single(bb1[10]) (src/main.rs:15:14: 15:24 (#0)
+| '_#19r: '_#35r due to Boring at Single(bb1[10]) (src/main.rs:15:14: 15:24 (#0)
+| '_#19r: '_#37r due to Cast at Single(bb1[10]) (src/main.rs:15:14: 15:24 (#0)
+| '_#20r: '_#50r due to Boring at Single(bb1[19]) (src/main.rs:15:16: 15:19 (#5)
+| '_#21r: '_#49r due to Boring at Single(bb1[20]) (src/main.rs:15:16: 15:19 (#5)
+| '_#22r: '_#58r due to Boring at Single(bb1[21]) (src/main.rs:15:16: 15:19 (#5)
+| '_#23r: '_#47r due to Boring at Single(bb2[1]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#24r: '_#45r due to Boring at Single(bb2[3]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#25r: '_#43r due to Boring at Single(bb2[4]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#26r: '_#41r due to Boring at Single(bb2[5]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#27r: '_#42r due to Boring at Single(bb2[5]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#27r: '_#44r due to Cast at Single(bb2[5]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#28r: '_#4r due to Boring at Single(bb2[10]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#28r: '_#54r due to Boring at Single(bb2[10]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#29r: '_#53r due to Boring at Single(bb2[11]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#30r: '_#52r due to Boring at Single(bb2[12]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#31r: '_#51r due to Boring at Single(bb2[13]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#32r: '_#33r due to Boring at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#32r: '_#57r due to Boring at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#33r: '_#64r due to CallArgument(Some(for<'r> fn(std::fmt::Arguments<'r>) {std::io::_print})) at Single(bb4[4]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:9: 136:62 (#4)
+| '_#34r: '_#32r due to CallArgument(Some(fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted})) at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#35r: '_#0r due to CallArgument(Some(fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted})) at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#36r: '_#18r due to Cast at Single(bb1[10]) (src/main.rs:15:14: 15:24 (#0)
+| '_#37r: '_#19r due to Cast at Single(bb1[10]) (src/main.rs:15:14: 15:24 (#0)
+| '_#38r: '_#17r due to Boring at Single(bb1[9]) (src/main.rs:15:14: 15:24 (#0)
+| '_#39r: '_#37r due to Boring at Single(bb1[9]) (src/main.rs:15:14: 15:24 (#0)
+| '_#41r: '_#32r due to CallArgument(Some(fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted})) at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#42r: '_#32r due to CallArgument(Some(fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted})) at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#43r: '_#26r due to Cast at Single(bb2[5]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#44r: '_#27r due to Cast at Single(bb2[5]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#45r: '_#25r due to Boring at Single(bb2[4]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#46r: '_#44r due to Boring at Single(bb2[4]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#47r: '_#46r due to Boring at Single(bb2[3]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#48r: '_#23r due to Boring at Single(bb2[1]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#49r: '_#63r due to CallArgument(Some(for<'b> fn(&'b i64) -> std::fmt::ArgumentV1<'b> {std::fmt::ArgumentV1::<'_>::new_lower_hex::<i64>})) at Single(bb1[21]) (src/main.rs:15:16: 15:19 (#5)
+| '_#50r: '_#21r due to Boring at Single(bb1[20]) (src/main.rs:15:16: 15:19 (#5)
+| '_#51r: '_#32r due to CallArgument(Some(fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted})) at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#52r: '_#31r due to Cast at Single(bb2[13]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#53r: '_#30r due to Boring at Single(bb2[12]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#54r: '_#29r due to Boring at Single(bb2[11]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#55r: '_#16r due to Boring at Single(bb1[8]) (src/main.rs:15:14: 15:24 (#0)
+| '_#56r: '_#39r due to Boring at Single(bb1[8]) (src/main.rs:15:14: 15:24 (#0)
+| '_#57r: '_#32r due to Boring at Single(bb3[0]) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#57r: '_#60r due to BoringNoLocation at All(/rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#58r: '_#22r due to Boring at Single(bb1[21]) (src/main.rs:15:16: 15:19 (#5)
+| '_#58r: '_#62r due to BoringNoLocation at All(src/main.rs:15:16: 15:19) (src/main.rs:15:16: 15:19 (#5)
+| '_#59r: '_#60r due to BoringNoLocation at All(/rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#60r: '_#57r due to BoringNoLocation at All(/rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#60r: '_#59r due to BoringNoLocation at All(/rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61) (/home/frank/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library/std/src/macros.rs:136:28: 136:61 (#5)
+| '_#61r: '_#62r due to BoringNoLocation at All(src/main.rs:15:16: 15:19) (src/main.rs:15:16: 15:19 (#5)
+| '_#62r: '_#58r due to BoringNoLocation at All(src/main.rs:15:16: 15:19) (src/main.rs:15:16: 15:19 (#5)
+| '_#62r: '_#61r due to BoringNoLocation at All(src/main.rs:15:16: 15:19) (src/main.rs:15:16: 15:19 (#5)
+| '_#63r: '_#48r due to Boring at Single(bb1[21]) (src/main.rs:15:16: 15:19 (#5)
+|
+| User Type Annotations
+| 0: user_ty: Canonical { max_universe: U0, variables: [CanonicalVarInfo { kind: Region(U0) }, CanonicalVarInfo { kind: Region(U0) }], value: TypeOf(DefId(2:10546 ~ core[f6f8]::fmt::{impl#4}::new_v1_formatted), UserSubsts { substs: [ReLateBound(DebruijnIndex(0), BoundRegion { var: 0, kind: BrAnon(0) })], user_self_ty: Some(UserSelfTy { impl_def_id: DefId(2:10543 ~ core[f6f8]::fmt::{impl#4}), self_ty: std::fmt::Arguments<'_> }) }) }, span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61, inferred_ty: fn(&[&'static str], &[std::fmt::ArgumentV1<'_>], &[std::fmt::rt::v1::Argument], core::fmt::UnsafeArg) -> std::fmt::Arguments<'_> {std::fmt::Arguments::<'_>::new_v1_formatted}
+| 1: user_ty: Canonical { max_universe: U0, variables: [CanonicalVarInfo { kind: Region(U0) }, CanonicalVarInfo { kind: Ty(General(U0)) }, CanonicalVarInfo { kind: Region(U0) }], value: TypeOf(DefId(2:48909 ~ core[f6f8]::fmt::{impl#3}::new_lower_hex), UserSubsts { substs: [ReLateBound(DebruijnIndex(0), BoundRegion { var: 0, kind: BrAnon(0) }), ^1], user_self_ty: Some(UserSelfTy { impl_def_id: DefId(2:10536 ~ core[f6f8]::fmt::{impl#3}), self_ty: std::fmt::ArgumentV1<'_> }) }) }, span: src/main.rs:15:16: 15:19, inferred_ty: for<'b> fn(&'b i64) -> std::fmt::ArgumentV1<'b> {std::fmt::ArgumentV1::<'_>::new_lower_hex::<i64>}
+|
+fn main() -> () {
+    let mut _0: ();                      // return place in scope 0 at src/main.rs:13:11: 13:11
+    let _1: i64;                         // in scope 0 at src/main.rs:14:9: 14:12
+    let _2: ();                          // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+    let _3: ();                          // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+    let mut _4: std::fmt::Arguments<'_>; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _5: &[&str];                 // in scope 0 at src/main.rs:15:14: 15:24
+    let mut _6: &[&str; 2];              // in scope 0 at src/main.rs:15:14: 15:24
+    let _7: &[&str; 2];                  // in scope 0 at src/main.rs:15:14: 15:24
+    let _8: [&str; 2];                   // in scope 0 at src/main.rs:15:14: 15:24
+    let mut _9: &[std::fmt::ArgumentV1<'_>]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _10: &[std::fmt::ArgumentV1<'_>; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _11: &[std::fmt::ArgumentV1<'_>; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _12: [std::fmt::ArgumentV1<'_>; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _13: std::fmt::ArgumentV1<'_>; // in scope 0 at src/main.rs:15:16: 15:19
+    let mut _14: &i64;                   // in scope 0 at src/main.rs:15:16: 15:19
+    let _15: &i64;                       // in scope 0 at src/main.rs:15:16: 15:19
+    let mut _16: &[std::fmt::rt::v1::Argument]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _17: &[std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _18: &[std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let _19: [std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _20: std::fmt::rt::v1::Argument; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _21: std::fmt::rt::v1::FormatSpec; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _22: std::fmt::rt::v1::Alignment; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _23: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _24: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _25: core::fmt::UnsafeArg;   // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    scope 1 {
+        debug val => _1;                 // in scope 1 at src/main.rs:14:9: 14:12
+        let mut _26: &[std::fmt::rt::v1::Argument; 1]; // in scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        let mut _27: &[&str; 2];         // in scope 1 at src/main.rs:15:14: 15:24
+        scope 2 {
+        }
+    }
+
+    bb0: {
+        StorageLive(_1);                 // scope 0 at src/main.rs:14:9: 14:12
+        _1 = inner(const 3811373583_u32) -> [return: bb1, unwind: bb6]; // scope 0 at src/main.rs:14:15: 14:32
+                                         // mir::Constant
+                                         // + span: src/main.rs:14:15: 14:20
+                                         // + literal: Const { ty: fn(u32) -> i64 {inner}, val: Value(<ZST>) }
+    }
+
+    bb1: {
+        FakeRead(ForLet(None), _1);      // scope 0 at src/main.rs:14:9: 14:12
+        StorageLive(_2);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+        StorageLive(_3);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+        StorageLive(_4);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_5);                 // scope 1 at src/main.rs:15:14: 15:24
+        StorageLive(_6);                 // scope 1 at src/main.rs:15:14: 15:24
+        StorageLive(_7);                 // scope 1 at src/main.rs:15:14: 15:24
+        _27 = const main::promoted[1];   // scope 1 at src/main.rs:15:14: 15:24
+                                         // mir::Constant
+                                         // + span: src/main.rs:15:14: 15:24
+                                         // + literal: Const { ty: &[&str; 2], val: Unevaluated(main, [], Some(promoted[1])) }
+        _7 = &(*_27);                    // scope 1 at src/main.rs:15:14: 15:24
+        _6 = &(*_7);                     // scope 1 at src/main.rs:15:14: 15:24
+        _5 = move _6 as &[&str] (Pointer(Unsize)); // scope 1 at src/main.rs:15:14: 15:24
+        StorageDead(_6);                 // scope 1 at src/main.rs:15:23: 15:24
+        StorageLive(_9);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_10);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_11);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_12);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_13);                // scope 1 at src/main.rs:15:16: 15:19
+        StorageLive(_14);                // scope 1 at src/main.rs:15:16: 15:19
+        StorageLive(_15);                // scope 1 at src/main.rs:15:16: 15:19
+        _15 = &_1;                       // scope 1 at src/main.rs:15:16: 15:19
+        _14 = &(*_15);                   // scope 1 at src/main.rs:15:16: 15:19
+        _13 = ArgumentV1::<'_>::new_lower_hex::<i64>(move _14) -> [return: bb2, unwind: bb6]; // scope 1 at src/main.rs:15:16: 15:19
+                                         // mir::Constant
+                                         // + span: src/main.rs:15:16: 15:19
+                                         // + user_ty: UserType(1)
+                                         // + literal: Const { ty: for<'b> fn(&'b i64) -> ArgumentV1<'b> {ArgumentV1::<'_>::new_lower_hex::<i64>}, val: Value(<ZST>) }
+    }
+
+    bb2: {
+        StorageDead(_14);                // scope 1 at src/main.rs:15:18: 15:19
+        _12 = [move _13];                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_13);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        _11 = &_12;                      // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _10 = &(*_11);                   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _9 = move _10 as &[std::fmt::ArgumentV1<'_>] (Pointer(Unsize)); // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_10);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageLive(_16);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_17);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageLive(_18);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _26 = const main::promoted[0];   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // + literal: Const { ty: &[Argument; 1], val: Unevaluated(main, [], Some(promoted[0])) }
+        _18 = &(*_26);                   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _17 = &(*_18);                   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _16 = move _17 as &[std::fmt::rt::v1::Argument] (Pointer(Unsize)); // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        StorageDead(_17);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageLive(_25);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _25 = core::fmt::UnsafeArg::new() -> [return: bb3, unwind: bb6]; // scope 2 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // + literal: Const { ty: unsafe fn() -> core::fmt::UnsafeArg {core::fmt::UnsafeArg::new}, val: Value(<ZST>) }
+    }
+
+    bb3: {
+        _4 = Arguments::<'_>::new_v1_formatted(move _5, move _9, move _16, move _25) -> [return: bb4, unwind: bb6]; // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+                                         // + user_ty: UserType(0)
+                                         // + literal: Const { ty: fn(&[&'static str], &[ArgumentV1<'_>], &[Argument], core::fmt::UnsafeArg) -> Arguments<'_> {Arguments::<'_>::new_v1_formatted}, val: Value(<ZST>) }
+    }
+
+    bb4: {
+        StorageDead(_25);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_16);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_9);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        StorageDead(_5);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:60: 136:61
+        _3 = _print(move _4) -> [return: bb5, unwind: bb6]; // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:62
+                                         // mir::Constant
+                                         // + span: /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:9: 136:27
+                                         // + literal: Const { ty: for<'r> fn(Arguments<'r>) {_print}, val: Value(<ZST>) }
+    }
+
+    bb5: {
+        StorageDead(_4);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:61: 136:62
+        StorageDead(_18);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_15);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_12);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_11);                // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_7);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        StorageDead(_3);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:62: 136:63
+        _2 = const ();                   // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:135:23: 137:6
+        StorageDead(_2);                 // scope 1 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:137:5: 137:6
+        _0 = const ();                   // scope 0 at src/main.rs:13:11: 16:2
+        StorageDead(_1);                 // scope 0 at src/main.rs:16:1: 16:2
+        return;                          // scope 0 at src/main.rs:16:2: 16:2
+    }
+
+    bb6 (cleanup): {
+        resume;                          // scope 0 at src/main.rs:13:1: 16:2
+    }
+}

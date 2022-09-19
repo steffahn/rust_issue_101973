@@ -1,0 +1,22 @@
+// MIR for `main::promoted[0]` after Derefer
+
+promoted[0] in main: &[Argument; 1] = {
+    let mut _0: &[std::fmt::rt::v1::Argument; 1]; // return place in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _1: [std::fmt::rt::v1::Argument; 1]; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _2: std::fmt::rt::v1::Argument; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _3: std::fmt::rt::v1::FormatSpec; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _4: std::fmt::rt::v1::Alignment; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _5: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    let mut _6: std::fmt::rt::v1::Count; // in scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+
+    bb0: {
+        _4 = std::fmt::rt::v1::Alignment::Unknown; // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _5 = Implied;                    // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _6 = Implied;                    // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _3 = FormatSpec { fill: const ' ', align: move _4, flags: const 4_u32, precision: move _5, width: move _6 }; // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _2 = Argument { position: const 0_usize, format: move _3 }; // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _1 = [move _2];                  // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        _0 = &_1;                        // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+        return;                          // scope 0 at /rustc/750bd1a7ff3e010611b97ee75d30b7cbf5f3a03c/library/std/src/macros.rs:136:28: 136:61
+    }
+}
